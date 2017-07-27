@@ -1,0 +1,246 @@
+<things version="1">
+	<entity name="status">
+		
+	</entity>
+	<entity name="core">
+		<component type="Level1" name="level">
+			<speed>200</speed>
+		</component>
+		<component type="GameTickComponent" name="controller">
+			
+		</component>
+		<component type="com.pblabs.sound.BackgroundMusicComponent" name="bgm">
+			<autoStart>false</autoStart>
+			<musicUrl>../assets/Level1.mp3</musicUrl>
+		</component>
+	</entity>
+	<entity name="background">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>5</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/bg_play_game2.png</fileName>
+			<layerIndex>0</layerIndex>
+		</component>
+	</entity>
+	<!-- glow disc animation -->
+	<entity name="glowBlue">
+		<component type="com.pblabs.rendering2D.spritesheet.SpriteSheetComponent" name="SpriteSheet">
+			<divider type="com.pblabs.rendering2D.spritesheet.CellCountDivider">
+				<xCount>40</xCount>
+				<yCount>1</yCount>
+			</divider> 
+			<image filename="../assets/images/disc_click_blue.png"/>
+		</component>
+	</entity>
+	<template name="animBlue">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>108</x>
+				<y>109</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component> 
+		<component type="com.pblabs.animation.AnimatorComponent" name="FrameAnimation">
+			<autoPlay>false</autoPlay>
+			<animations childType="com.pblabs.animation.Animator"> 
+			<idle type="">
+				<animationType>PING_PONG_ANIMATION</animationType>
+				<duration>0.5</duration>
+				<repeatCount>-1</repeatCount>
+				<startValue type="int">0</startValue>
+				<targetValue type="int">40</targetValue>
+			</idle>
+			</animations>
+			<defaultAnimation></defaultAnimation>
+			<reference>@Render.spriteIndex</reference>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteSheetRenderer" name="Render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<rotationProperty>@Spatial.rotation</rotationProperty>
+			<sizeProperty>@Spatial.size</sizeProperty> 
+			<spriteSheet componentReference="glowBlue"/>
+			<layerIndex>4</layerIndex>
+		</component>
+	</template>
+	<entity name="glowGreen">
+		<component type="com.pblabs.rendering2D.spritesheet.SpriteSheetComponent" name="SpriteSheet">
+			<divider type="com.pblabs.rendering2D.spritesheet.CellCountDivider">
+				<xCount>40</xCount>
+				<yCount>1</yCount>
+			</divider> 
+			<image filename="../assets/images/disc_click_green.png"/>
+		</component>
+	</entity>
+	<template name="animGreen">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>108</x>
+				<y>109</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component> 
+		<component type="com.pblabs.animation.AnimatorComponent" name="FrameAnimation">
+			<autoPlay>false</autoPlay>
+			<animations childType="com.pblabs.animation.Animator"> 
+			<idle type="">
+				<!--<animationType>PING_PONG_ANIMATION</animationType>-->
+				<animationType>PING_PONG_ANIMATION</animationType>
+				<duration>0.5</duration>
+				<repeatCount>-1</repeatCount>
+				<startValue type="int">0</startValue>
+				<targetValue type="int">40</targetValue>
+			</idle>
+			</animations>
+			<defaultAnimation>idle</defaultAnimation>
+			<reference>@Render.spriteIndex</reference>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteSheetRenderer" name="Render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<rotationProperty>@Spatial.rotation</rotationProperty>
+			<sizeProperty>@Spatial.size</sizeProperty> 
+			<spriteSheet componentReference="glowGreen"/>
+			<layerIndex>3</layerIndex>
+		</component>
+	</template>
+	<entity name="glowRed">
+		<component type="com.pblabs.rendering2D.spritesheet.SpriteSheetComponent" name="SpriteSheet">
+			<divider type="com.pblabs.rendering2D.spritesheet.CellCountDivider">
+				<xCount>40</xCount>
+				<yCount>1</yCount>
+			</divider> 
+			<image filename="../assets/images/disc_click_red.png"/>
+		</component>
+	</entity>
+	<template name="animRed">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>108</x>
+				<y>109</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component> 
+		<component type="com.pblabs.animation.AnimatorComponent" name="FrameAnimation">
+			<autoPlay type="Boolean">false</autoPlay>
+			<animations childType="com.pblabs.animation.Animator"> 
+			<idle type="">
+				<!--<animationType>PING_PONG_ANIMATION</animationType>-->
+				<animationType>PING_PONG_ANIMATION</animationType>
+				<duration>0.5</duration>
+				<repeatCount>-1</repeatCount>
+				<startValue type="int">0</startValue>
+				<targetValue type="int">40</targetValue>
+			</idle>
+			</animations>
+			<defaultAnimation>idle</defaultAnimation>
+			<reference>@Render.spriteIndex</reference>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteSheetRenderer" name="Render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<rotationProperty>@Spatial.rotation</rotationProperty>
+			<sizeProperty>@Spatial.size</sizeProperty> 
+			<spriteSheet componentReference="glowRed"/>
+			<layerIndex>2</layerIndex>
+		</component>
+	</template>
+	<!-- end of glow animations --> 
+	<template name="red">
+		<component type="ItemStatus" name="Status">
+			<state>0</state>
+		</component>
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_red.png</fileName>
+			<layerIndex>3</layerIndex>
+		</component>
+	</template>
+	<template name="green">
+		<component type="ItemStatus" name="Status">
+			<state>0</state>
+		</component>
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_green.png</fileName>
+			<layerIndex>4</layerIndex>
+		</component>
+	</template>
+	<template name="blue">
+		<component type="ItemStatus" name="Status">
+			<state>0</state>
+		</component>
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_blue.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</template>
+	<group name="Level1Data">
+		<objectReference name="core"/>
+		<objectReference name="status"/>
+		<objectReference name="background"/>
+		<objectReference name="glowRed"/>
+		<objectReference name="glowGreen"/>
+		<objectReference name="glowBlue"/>
+	</group>
+</things>

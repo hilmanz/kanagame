@@ -1,0 +1,10 @@
+<things version="1">
+	<entity name="game_config">
+		<component type="ConfigComponent" name="config">
+			<remote_url>http://staging.marlboro.co.id/remote/gateway.php</remote_url>
+		</component>
+	</entity>
+	<group name="Level0Data">
+		<objectReference name="game_config"/>
+	</group>
+</things>

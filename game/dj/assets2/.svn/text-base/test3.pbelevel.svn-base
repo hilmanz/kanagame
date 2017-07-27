@@ -1,0 +1,98 @@
+<things version="1">
+	<entity name="status">
+		
+	</entity>
+	<entity name="core">
+		<component type="Level3" name="level">
+			
+		</component>
+		<component type="GameTickComponent" name="controller">
+			
+		</component>
+		<component type="com.pblabs.sound.BackgroundMusicComponent" name="bgm">
+			<autoStart>false</autoStart>
+			<musicUrl>../assets/Level3.mp3</musicUrl>
+		</component>
+	</entity>
+	<entity name="background">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>5</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/bg_play_game2.png</fileName>
+			<layerIndex>0</layerIndex>
+		</component>
+	</entity>
+	<template name="red">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_red.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</template>
+	<template name="green">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_green.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</template>
+	<template name="blue">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/images/disc_blue.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</template>
+	<group name="test3Data">
+		<objectReference name="core"/>
+		<objectReference name="status"/>
+		<objectReference name="background"/>
+	</group>
+</things>

@@ -1,0 +1,547 @@
+<things version="1">
+	<entity name="status">
+		<component type="PuzzleStatus" name="puzzle_status">
+			<isBusy>false</isBusy>
+			<n_hint>3</n_hint>
+		</component>
+		<component type="TimeTickerComponent" name="timer">
+		<game_time>60</game_time>
+		</component>
+	</entity>
+	<entity name="background">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/bg_game.jpg</fileName>
+			<layerIndex>0</layerIndex>
+		</component>
+	</entity>
+	<entity name="puzzle1" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>0</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle2" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>1</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle3" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>2</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle4" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>3</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle5" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>4</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle6" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>5</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle7" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>6</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle8" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>7</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle9" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>8</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle10" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>9</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle11" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>10</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle12" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>11</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle13" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>12</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle14" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>13</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle15" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>14</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle16" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>15</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle17" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>16</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle18" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>17</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle19" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>18</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle20" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>19</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle21" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>20</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle22" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>21</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle23" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>22</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle24" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>23</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle25" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>24</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle26" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>25</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle27" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>26</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle28" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>27</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle29" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>28</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle30" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>29</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle31" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>30</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle32" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>31</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle33" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>32</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle34" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>33</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle35" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>34</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle36" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>35</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle37" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>36</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle38" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>37</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle39" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>38</spriteIndex>
+		</component>
+	</entity>
+	<entity name="puzzle40" template="tpl_puzzle">
+		<component name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+		</component>
+		<component name="render">
+			<spriteIndex>39</spriteIndex>
+		</component>
+	</entity>
+	<template name="tpl_puzzle">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>392</x>
+				<y>175</y>
+			</size>
+			
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="PuzzlePickedComponent" name="onPickedComponent">
+			<positionReference>@Spatial.position</positionReference>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteSheetRenderer" name="render">
+			<spriteSheet componentReference="sprite"/>
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<layerIndex>10</layerIndex>
+		</component>
+	</template>
+	<entity name="sprite">
+		<component type="com.pblabs.rendering2D.spritesheet.SpriteSheetComponent" name="sprite">
+			<imageFilename>../assets/gravity3.png</imageFilename>
+			<divider type="com.pblabs.rendering2D.spritesheet.CellCountDivider">
+				<xCount>10</xCount>
+				<yCount>4</yCount>
+			</divider>
+		</component>
+	</entity>
+	<group name="Level3Data">
+		<objectReference name="status"/>
+		<objectReference name="background"/>
+		<objectReference name="sprite"/>
+		<objectReference name="puzzle1"/>
+		<objectReference name="puzzle2"/>
+		<objectReference name="puzzle3"/>
+		<objectReference name="puzzle4"/>
+		<objectReference name="puzzle5"/>
+		<objectReference name="puzzle6"/>
+		<objectReference name="puzzle7"/>
+		<objectReference name="puzzle8"/>
+		<objectReference name="puzzle9"/>
+		<objectReference name="puzzle10"/>
+		<objectReference name="puzzle11"/>
+		<objectReference name="puzzle12"/>
+		<objectReference name="puzzle13"/>
+		<objectReference name="puzzle14"/>
+		<objectReference name="puzzle15"/>
+		<objectReference name="puzzle16"/>
+		<objectReference name="puzzle17"/>
+		<objectReference name="puzzle18"/>
+		<objectReference name="puzzle19"/>
+		<objectReference name="puzzle20"/>
+		<objectReference name="puzzle21"/>
+		<objectReference name="puzzle22"/>
+		<objectReference name="puzzle23"/>
+		<objectReference name="puzzle24"/>
+		<objectReference name="puzzle25"/>
+		<objectReference name="puzzle26"/>
+		<objectReference name="puzzle27"/>
+		<objectReference name="puzzle28"/>
+		<objectReference name="puzzle29"/>
+		<objectReference name="puzzle30"/>
+		<objectReference name="puzzle31"/>
+		<objectReference name="puzzle32"/>
+		<objectReference name="puzzle33"/>
+		<objectReference name="puzzle34"/>
+		<objectReference name="puzzle35"/>
+		<objectReference name="puzzle36"/>
+		<objectReference name="puzzle37"/>
+		<objectReference name="puzzle38"/>
+		<objectReference name="puzzle39"/>
+		<objectReference name="puzzle40"/>
+	</group>
+</things>

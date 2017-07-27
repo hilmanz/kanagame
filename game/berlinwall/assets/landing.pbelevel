@@ -1,0 +1,87 @@
+<things version="1">
+	<entity name="status">
+		<component type="PuzzleStatus" name="puzzle_status">
+			<isBusy>false</isBusy>
+		</component>
+	</entity>
+	<entity name="background">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>0</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/bg_wall.png</fileName>
+			<layerIndex>0</layerIndex>
+		</component>
+	</entity>
+	<entity name="title">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>0</x>
+				<y>-70</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/content_landing.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</entity>
+	<entity name="btn_howto">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>-150</x>
+				<y>180</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/btn_howtoplay.png</fileName>
+			<layerIndex>1</layerIndex>
+			
+		</component>
+	</entity>
+	<entity name="btn_play">
+		<component type="com.pblabs.rendering2D.SimpleSpatialComponent" name="Spatial">
+			<position type="">
+				<x>150</x>
+				<y>180</y>
+			</position>
+			<size type="">
+				<x>798</x>
+				<y>564</y>
+			</size>
+			<spatialManager componentReference="SceneDB"/>
+		</component>
+		<component type="com.pblabs.rendering2D.SpriteRenderer" name="render">
+			<scene componentReference="SceneDB"/>
+			<positionProperty>@Spatial.position</positionProperty>
+			<fileName>../assets/btn_play_now.png</fileName>
+			<layerIndex>1</layerIndex>
+		</component>
+	</entity>
+	<group name="landingData">
+		<objectReference name="background"/>
+	</group>
+</things>
